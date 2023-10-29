@@ -1,0 +1,30 @@
+if(debugMarkers)then{
+	createMarker["spawnCentreMkr",[0,0]];
+	"spawnCentreMkr" setMarkerShape "ICON";
+	"spawnCentreMkr" setMarkerType "dot";
+	"spawnCentreMkr" setMarkerText "PLAYER";
+	"spawnCentreMkr" setMarkerColor "colorGreen";
+	"spawnCentreMkr" setMarkerSize [0.7,0.7];
+	createMarker["spawnAreaMkr",[0,0]];
+	"spawnAreaMkr" setMarkerColor "COLORBLACK";
+	"spawnAreaMkr" setMarkerShape "ellipse";
+	"spawnAreaMkr" setMarkerSize [spawnMax,spawnMax];
+	"spawnAreaMkr" setMarkerBrush "border";
+};
+_pl = "emptyDetector" createVehicle PLAYER_LAST;
+_lastPlayer = player;
+while{true}do{
+	_dist = [PLAYER_LAST,getPos player]call xyPosDist;
+	_shift = SPAWN_SHIFT_MULT * _dist;
+	if(player == _lastPlayer)then{totalDistance = totalDistance + _dist};
+	_pl setPos PLAYER_LAST;
+	_dir = [player,_pl]call directionAfromB;
+	_x = (getPos player select 0) + (_shift * (sin _dir));
+	_y = (getPos player select 1) + (_shift * (cos _dir));
+	SPAWN_CENTER = [_x,_y];
+	PLAYER_LAST = getPos player;
+	_lastPlayer = player;
+	"spawnAreaMkr" setMarkerPos SPAWN_CENTER;
+	"spawnCentreMkr" setMarkerPos SPAWN_CENTER;
+	sleep 10;
+};

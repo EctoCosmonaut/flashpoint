@@ -1,0 +1,1 @@
+_d = createDialog "comDialog";

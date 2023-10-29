@@ -1,0 +1,12 @@
+deleteMarker "YOUR_POS";
+hint "Your position is on your map.";
+sleep 1;
+if(!("ItemMap" in (weapons player)))then{player addWeapon "ItemMap"};
+_markerName = ("YOUR_POS_"+str markerCount);
+markerCount = markerCount + 1;
+_marker = createMarker[_markerName,[getPos player select 0,getPos player select 1]];
+_marker setMarkerShape "ICON";
+_markerName setMarkerType "dot";
+_markerName setMarkerText "Your position "+call tod;
+_markerName setMarkerColor "colorGreen";
+_markerName setMarkerSize [0.7,0.7];

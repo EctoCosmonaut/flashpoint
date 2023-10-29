@@ -1,0 +1,29 @@
+#include "gcam\gcam_component.hpp"
+
+OnLoadMission = "F L A S H P O I N T :   Z A R G A B A D";
+doneKeys[] = {"thomsonb_flashpoint_zargabad"};
+
+OnLoadMissionTime = false;
+briefing = 0;
+enableItemsDropping = 0;
+
+class CfgSounds
+{
+	sounds[] = {fieldDressing};
+	class fieldDressing
+	{
+		name = "fieldDressing";
+		sound[] = {\sound\fieldDressing.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
+	};
+};
+
+#include "dialogs\tak_defaults.hpp"
+#include "dialogs\tak_team_respawn_dialogs.hpp"
+#include "dialogs\tak_commands_dialog.hpp"
+#include "dialogs\tak_start_dialog.hpp"
+#include "dialogs\tak_faction_dialog.hpp"
+#include "dialogs\tak_player_dialog.hpp"
+#include "dialogs\tak_time_wx_dialog.hpp"
+#include "dialogs\tak_group_spawn_dialog.hpp"
+#include "dialogs\tak_suport_dialog.hpp"
