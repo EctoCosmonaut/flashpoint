@@ -1,9 +1,9 @@
 call compile preprocessFileLineNumbers "chernarusFactions.sqf";
 
-WORLD_STRING = "Chernarus";
-FILM_TITLE_STRING = "C H E R N A R U S";
-KEY_TITLE_STRING = "thomsonb_flashpoint_chernarus_BAF";
-SPAWN_LIMITS = [1000,13500,1500,13500];
+WORLD_STRING = "Utes";
+FILM_TITLE_STRING = "U T E S";
+KEY_TITLE_STRING = "thomsonb_flashpoint_utes_BAF";
+SPAWN_LIMITS = [2500,4600,2700,4600];
 
 // add the filename of new presets here
 ALL_PRESET_FILENAMES = ["randomLow","randomHigh","ww3","sniper","insurgency","foggyMorning","stormyEvening","randomInfantryOnly","randomLowSupports","randomHighSupports"];
@@ -26,11 +26,11 @@ SPAWN_MIN_DEFAULT = 2;
 SPAWN_MAX_LIST = [400,500,600,700,800,900,1000,1200,1500,1800,2000];
 SPAWN_MAX_DEFAULT = 4;
 
-FRIENDLY_GROUPS = 6;
-ENEMY_GROUPS = 6;
+FRIENDLY_GROUPS = 7;
+ENEMY_GROUPS = 7;
 GROUP_COUNT_LIST = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-FRIEND_COUNT_DEFAULT = 6;
-ENEMY_COUNT_DEFAULT = 6;
+FRIEND_COUNT_DEFAULT = 7;
+ENEMY_COUNT_DEFAULT = 7;
 
 SNIPER_PERCENT =10;
 CAR_PERCENT = 15;
@@ -46,7 +46,7 @@ HELI_PERCENT_DEFAULT = 5;
 AIR_PERCENT_DEFAULT = 5;
 
 CAR_DENSITY_FACTOR = 0.1;//probability that each suitable road will spawn a car - default 0.1
-CAR_MAX_PER_TOWN = 5;
+CAR_MAX_PER_TOWN = 10;
 CARPARK_TYPES = [
 	"SkodaBlue",
 	"SkodaGreen",
