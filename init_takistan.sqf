@@ -1,9 +1,9 @@
 call compile preprocessFileLineNumbers "takistanFactions.sqf";
 
-WORLD_STRING = "Zargabad";
-FILM_TITLE_STRING = "Z A R G A B A D";
-KEY_TITLE_STRING = "thomsonb_flashpoint_zargabad";
-SPAWN_LIMITS = [3500,4500,3600,4600];
+WORLD_STRING = "Takistan";
+FILM_TITLE_STRING = "T A K I S T A N";
+KEY_TITLE_STRING = "thomsonb_flashpoint_takistan";
+SPAWN_LIMITS = [0,12000,200,12400];
 
 // add the filename of new presets here
 ALL_PRESET_FILENAMES = ["randomLow","randomHigh","taliban","snipers","night","foggyMorning","stormyEvening","randomInfantryOnly","randomLowSupports","randomHighSupports"];
@@ -19,18 +19,18 @@ SNIPERS_HAVE_SPOTTERS_PERCENT = 75;
 GCAM_ACTIVE = true;//(GCAM only works in ArmA2 Combined operations)
 RANDOM_TIME_CODE = {(3+(random 17))};  //this default gives 0300 to 2000
 
-spawnMIN = 200;
-spawnMAX = 700;
+spawnMIN = 400;
+spawnMAX = 1000;
 SPAWN_MIN_LIST = [100,200,300,400,500,600,700,800,900,1000,1200];
-SPAWN_MIN_DEFAULT = 1;
+SPAWN_MIN_DEFAULT = 3;
 SPAWN_MAX_LIST = [400,500,600,700,800,900,1000,1200,1500,1800,2000];
-SPAWN_MAX_DEFAULT = 3;
+SPAWN_MAX_DEFAULT = 6;
 
-FRIENDLY_GROUPS = 5;
-ENEMY_GROUPS = 5;
+FRIENDLY_GROUPS = 8;
+ENEMY_GROUPS = 8;
 GROUP_COUNT_LIST = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-FRIEND_COUNT_DEFAULT = 5;
-ENEMY_COUNT_DEFAULT = 5;
+FRIEND_COUNT_DEFAULT = 8;
+ENEMY_COUNT_DEFAULT = 8;
 
 SNIPER_PERCENT =10;
 CAR_PERCENT = 15;
@@ -101,14 +101,14 @@ CAR_AMMOS = [
 
 itemCargos = ["nvgoggles","itemcompass","binocular","itemmap","itemgps"];
 
-WPN_CACHE_DENSITY = 8;
+WPN_CACHE_DENSITY = 15;
 
-CIV_COUNT_MAX = 8;
-CIV_SPAWN_RANGE = 600;
-CIV_REMOVE_RANGE = 700;
+CIV_COUNT_MAX = 12;
+CIV_SPAWN_RANGE = 900;
+CIV_REMOVE_RANGE = 1000;
 CIV_PER_BUILDING = 0.2;
 CIV_WP_DELAYS = [0,30,60];
-CIV_ROAMING_DIST = 300;
+CIV_ROAMING_DIST = 400;
 CIV_STAY_HOME_PERCENTAGE = 30;
 CIV_TYPES = [
 	"TK_CIV_Takistani01_EP1",
@@ -122,6 +122,7 @@ CIV_TYPES = [
 	"TK_CIV_Woman02_EP1",
 	"TK_CIV_Woman03_EP1"
 ];
+
 MUSIC_TRACKS = [
 	"Track01_Dead_Forest",
 	"Track02_Insertion",
