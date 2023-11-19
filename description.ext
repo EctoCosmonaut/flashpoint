@@ -1,11 +1,11 @@
 #include "gcam\gcam_component.hpp"
 
-OnLoadMission = "F L A S H P O I N T :   Z A R G A B A D";
-doneKeys[] = {"thomsonb_flashpoint_zargabad"};
-
+OnLoadMission = "F L A S H P O I N T :   C H E R N A R U S";
 OnLoadMissionTime = false;
 briefing = 0;
 enableItemsDropping = 0;
+
+doneKeys[] = {"thomsonb_flashpoint_chernarus_BAF"};
 
 class CfgSounds
 {
@@ -18,12 +18,12 @@ class CfgSounds
 	};
 };
 
-#include "dialogs\tak_defaults.hpp"
-#include "dialogs\tak_team_respawn_dialogs.hpp"
-#include "dialogs\tak_commands_dialog.hpp"
-#include "dialogs\tak_start_dialog.hpp"
-#include "dialogs\tak_faction_dialog.hpp"
-#include "dialogs\tak_player_dialog.hpp"
-#include "dialogs\tak_time_wx_dialog.hpp"
-#include "dialogs\tak_group_spawn_dialog.hpp"
-#include "dialogs\tak_suport_dialog.hpp"
+#include "dialogs\defaults.hpp"
+#include "dialogs\team_respawn_dialogs.hpp"
+#include "dialogs\commands_dialog.hpp"
+#include "dialogs\start_dialog.hpp"
+#include "dialogs\faction_dialog.hpp"
+#include "dialogs\player_dialog.hpp"
+#include "dialogs\time_wx_dialog.hpp"
+#include "dialogs\group_spawn_dialog.hpp"
+#include "dialogs\suport_dialog.hpp"

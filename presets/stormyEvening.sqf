@@ -12,7 +12,7 @@ _code = {//keep this line
 	
 	// edit the code below this line to make your preset
 	
-	RANDOM_TIME_CODE = {18.5}; // this code sets random time between 0400 and 1845
+	RANDOM_TIME_CODE = {18.75}; // this code sets random time between 0400 and 1845
 	CLOUD_INDEX = 20;//these indexes start from 1 and refer to arrays in init.sqf
 	FOG_INDEX = 5;//these indexes start from 1 and refer to arrays in init.sqf
 	

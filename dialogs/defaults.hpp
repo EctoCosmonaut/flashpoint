@@ -1,11 +1,8 @@
 //---- This file defines constants and resource dialogs ----
 
-//these are the takistan tan colors ignore the names!!
-#define FLASHPOINT_COL_GREEN_LIGHT	{0.42, 0.42, 0.26, 0.8}
-#define FLASHPOINT_COL_GREEN		{0.38, 0.38, 0.24, 0.8}
-#define FLASHPOINT_COL_GREEN_DARK	{0.24, 0.20, 0.14, 0.8}
-//these are the takistan tan colors ignore the names!!
-
+#define FLASHPOINT_COL_GREEN_LIGHT	{0.64, 0.80, 0.53, 0.8}
+#define FLASHPOINT_COL_GREEN		{0.44, 0.60, 0.33, 0.8}
+#define FLASHPOINT_COL_GREEN_DARK	{0.24, 0.40, 0.13, 0.8}
 
 #define CT_STATIC           0
 #define CT_BUTTON           1
